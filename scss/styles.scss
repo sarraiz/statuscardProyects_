@@ -1,0 +1,13 @@
+$container-max-width:1280px;
+$container-min-width:375px;
+$very-dark-blue:#090B1A;
+$Dark-desaturated-blue:#1B1938;
+$Soft-violet:#AA5BDB;
+$white:#fff;
+
+.container {
+    max-width:$container-max-width;
+    min-width:$container-min-width;
+    margin:0 auto;
+    width:100%;
+}
