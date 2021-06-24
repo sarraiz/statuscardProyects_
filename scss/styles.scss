@@ -7,7 +7,7 @@ $white:#ffffff;
 $font-inter:'Inter', sans-serif;
 $font-lexa-deca:'Lexend Deca', sans-serif;
 $float-left:left;
-$border-radius:15px;
+$border-radius:10px;
 $columns-width:50%/*50%*/;
 $columns-width-mobile:100%;
 $columns-left-padding:7% 7% 0 7%;
@@ -23,13 +23,17 @@ $uppercase:uppercase;
 $inherit:inherit;
 $text-center:center;
 
-body {
+body, html {
     background:$very-dark-blue;
+    height: 100%;
 }
 .container {
     max-width:$container-max-width;
     min-width:$container-min-width;
     margin:0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 .columns {
     width:100%;
@@ -103,6 +107,10 @@ body {
     .mobile {
         display:$display-block;
     }
+    body, html {
+        padding:50px 15px;
+        height:inherit;
+    }
     .column {
         width:$columns-width-mobile;
         float:$inherit;
@@ -115,6 +123,7 @@ body {
                 & li {
                     float:$inherit;
                     width: 100%;
+                    margin-bottom:-20px;
                 }
             }
         }

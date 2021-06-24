@@ -1,17 +1,25 @@
-body {
+body, html {
   background: #090B1A;
+  height: 100%;
 }
 
 .container {
   max-width: 1280px;
   min-width: 375px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .columns {
   width: 100%;
   background: #1B1938;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -80,6 +88,11 @@ body {
     display: block;
   }
 
+  body, html {
+    padding: 50px 15px;
+    height: inherit;
+  }
+
   .column {
     width: 100%;
     float: inherit;
@@ -95,5 +108,6 @@ body {
   .column.left ul li {
     float: inherit;
     width: 100%;
+    margin-bottom: -20px;
   }
 }
